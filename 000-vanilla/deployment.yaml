@@ -1,6 +1,7 @@
 apiVersion: apps/v1
 kind: Deployment
 metadata:
+  creationTimestamp: null
   labels:
     app: testing
   name: testing
@@ -12,6 +13,7 @@ spec:
   strategy: {}
   template:
     metadata:
+      creationTimestamp: null
       labels:
         app: testing
     spec:
@@ -22,3 +24,4 @@ spec:
         image: ubuntu
         name: ubuntu
         resources: {}
+status: {}
